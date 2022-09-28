@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct FrameworksGridView: View {
+    //@StateObject - pq tem que guardar o estado
+    @StateObject var viewModel: FrameworksDetailViewModel = FrameworksDetailViewModel()
     
     let columns: [GridItem] = [
         GridItem(.flexible()),
@@ -14,10 +16,16 @@ struct FrameworksGridView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { frameworks in
                         FrameworksTitleView(frameworks: frameworks)
+                            .onTapGesture {
+                            viewModel.selectedFramework = frameworks
+                        }
                     }
                 }
             }
             .navigationTitle("🍎 Frameworks")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                FrameworksDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework)
+            }
         }
     }
 }

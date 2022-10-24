@@ -9,5 +9,11 @@ final class FrameworksDetailViewModel: ObservableObject {
     }
     
     //@Published - pq precisa ser ouvida em outra classe
-     @Published var isShowingDetailView = false
+    @Published var isShowingDetailView = false
+    
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
 }

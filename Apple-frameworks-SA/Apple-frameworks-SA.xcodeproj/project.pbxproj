@@ -16,6 +16,7 @@
 		7B28756D28E3CB500075EC29 /* FrameworksDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28756C28E3CB500075EC29 /* FrameworksDetailView.swift */; };
 		7B28756F28E3D5A70075EC29 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28756E28E3D5A70075EC29 /* AFButton.swift */; };
 		7B28757128E3DB0B0075EC29 /* FrameworksDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28757028E3DB0A0075EC29 /* FrameworksDetailViewModel.swift */; };
+		7BBF8D642906B09D003537F8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF8D632906B09D003537F8 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		7B28756C28E3CB500075EC29 /* FrameworksDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksDetailView.swift; sourceTree = "<group>"; };
 		7B28756E28E3D5A70075EC29 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		7B28757028E3DB0A0075EC29 /* FrameworksDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksDetailViewModel.swift; sourceTree = "<group>"; };
+		7BBF8D632906B09D003537F8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +63,12 @@
 		7B28755728E3BC780075EC29 /* Apple-frameworks-SA */ = {
 			isa = PBXGroup;
 			children = (
+				7BBF8D692906B443003537F8 /* Views */,
+				7BBF8D682906B41C003537F8 /* Model */,
+				7BBF8D652906B2DE003537F8 /* Scenes */,
 				7B28755828E3BC780075EC29 /* Apple_frameworks_SAApp.swift */,
 				7B28755C28E3BC7D0075EC29 /* Assets.xcassets */,
 				7B28755E28E3BC7D0075EC29 /* Preview Content */,
-				7B28756628E3BDF30075EC29 /* Framework.swift */,
-				7B28756828E3BF5C0075EC29 /* FrameworksGridView.swift */,
-				7B28756A28E3CB160075EC29 /* FrameworksTitleView.swift */,
-				7B28756C28E3CB500075EC29 /* FrameworksDetailView.swift */,
-				7B28756E28E3D5A70075EC29 /* AFButton.swift */,
-				7B28757028E3DB0A0075EC29 /* FrameworksDetailViewModel.swift */,
 			);
 			path = "Apple-frameworks-SA";
 			sourceTree = "<group>";
@@ -80,6 +79,66 @@
 				7B28755F28E3BC7D0075EC29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BBF8D652906B2DE003537F8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF8D672906B3F4003537F8 /* GridView */,
+				7BBF8D662906B3E6003537F8 /* DetailView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7BBF8D662906B3E6003537F8 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7B28757028E3DB0A0075EC29 /* FrameworksDetailViewModel.swift */,
+				7B28756C28E3CB500075EC29 /* FrameworksDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		7BBF8D672906B3F4003537F8 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				7B28756828E3BF5C0075EC29 /* FrameworksGridView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		7BBF8D682906B41C003537F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B28756628E3BDF30075EC29 /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BBF8D692906B443003537F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF8D6B2906B475003537F8 /* View */,
+				7BBF8D6A2906B44B003537F8 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BBF8D6A2906B44B003537F8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7B28756E28E3D5A70075EC29 /* AFButton.swift */,
+				7BBF8D632906B09D003537F8 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		7BBF8D6B2906B475003537F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B28756A28E3CB160075EC29 /* FrameworksTitleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +218,7 @@
 				7B28756F28E3D5A70075EC29 /* AFButton.swift in Sources */,
 				7B28755928E3BC780075EC29 /* Apple_frameworks_SAApp.swift in Sources */,
 				7B28757128E3DB0B0075EC29 /* FrameworksDetailViewModel.swift in Sources */,
+				7BBF8D642906B09D003537F8 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

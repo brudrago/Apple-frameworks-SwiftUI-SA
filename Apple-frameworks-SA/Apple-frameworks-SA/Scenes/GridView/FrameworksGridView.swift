@@ -4,16 +4,10 @@ struct FrameworksGridView: View {
     //@StateObject - pq tem que guardar o estado
     @StateObject var viewModel: FrameworksDetailViewModel = FrameworksDetailViewModel()
     
-    let columns: [GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
-    
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: viewModel.columns) {
                     ForEach(MockData.frameworks) { frameworks in
                         FrameworksTitleView(frameworks: frameworks)
                             .onTapGesture {
